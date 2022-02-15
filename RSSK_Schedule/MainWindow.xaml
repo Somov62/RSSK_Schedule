@@ -1,0 +1,53 @@
+﻿<Window x:Class="RSSK_Schedule.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RSSK_Schedule"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Group" Margin="60, 10"/>
+        <TextBlock Text="Date" Margin="250, 10"/>
+        <ComboBox x:Name="groupPicker" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30" HorizontalContentAlignment="Center" Width="100">
+            <ComboBoxItem>ИСП11</ComboBoxItem>
+            <ComboBoxItem>ИСП12</ComboBoxItem >
+            <ComboBoxItem>ИСП13</ComboBoxItem >
+            <ComboBoxItem>ИСП14</ComboBoxItem >
+            <ComboBoxItem>ТМ11</ComboBoxItem >
+            <ComboBoxItem>ТМ12</ComboBoxItem >
+            <ComboBoxItem>ТМП11</ComboBoxItem >
+            <ComboBoxItem>Б11</ComboBoxItem >
+            <ComboBoxItem>К11</ComboBoxItem >
+            <ComboBoxItem>БД11</ComboBoxItem >
+            <ComboBoxItem>ИСП21</ComboBoxItem >
+            <ComboBoxItem>ИСП22</ComboBoxItem >
+            <ComboBoxItem>ИСП23</ComboBoxItem >
+            <ComboBoxItem>ИСП24</ComboBoxItem >
+            <ComboBoxItem>ТМ21</ComboBoxItem >
+            <ComboBoxItem>ТМ22</ComboBoxItem >
+            <ComboBoxItem>ТМП21</ComboBoxItem >
+            <ComboBoxItem>Б21</ComboBoxItem >
+            <ComboBoxItem>К21</ComboBoxItem >
+            <ComboBoxItem>БД21</ComboBoxItem >
+            <ComboBoxItem>ИСП31</ComboBoxItem >
+            <ComboBoxItem>ИСП32</ComboBoxItem >
+            <ComboBoxItem>ИСП33</ComboBoxItem >
+            <ComboBoxItem>ИСП34</ComboBoxItem >
+            <ComboBoxItem>ТМ31</ComboBoxItem >
+            <ComboBoxItem>ТМ32</ComboBoxItem >
+            <ComboBoxItem>ТМП31</ComboBoxItem >
+            <ComboBoxItem>Б31</ComboBoxItem >
+            <ComboBoxItem>К31</ComboBoxItem >
+            <ComboBoxItem>БД31</ComboBoxItem >
+            <ComboBoxItem>ИСП41</ComboBoxItem >
+            <ComboBoxItem>ИСП42</ComboBoxItem >
+            <ComboBoxItem>ИСП43</ComboBoxItem >
+            <ComboBoxItem>ТМ41</ComboBoxItem >
+            <ComboBoxItem>ТМ42</ComboBoxItem >
+        </ComboBox>
+        <DatePicker Margin="200, 30" x:Name="datePicker" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button Content="Показать" Click="ShowRasp_Click" Margin="450, 30, 0, 0"  Width="150" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock x:Name="output" Margin="30, 100, 30, 30" />
+    </Grid>
+</Window>

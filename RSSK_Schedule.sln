@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSSK_Schedule", "RSSK_Schedule\RSSK_Schedule.csproj", "{D32A3789-E48A-4A54-A7D6-B795182EA039}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelParserLib", "ExcelParserLib\ExcelParserLib.csproj", "{EF78D221-A052-4EFF-81BA-E6EFD516BCC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D32A3789-E48A-4A54-A7D6-B795182EA039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32A3789-E48A-4A54-A7D6-B795182EA039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32A3789-E48A-4A54-A7D6-B795182EA039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32A3789-E48A-4A54-A7D6-B795182EA039}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF78D221-A052-4EFF-81BA-E6EFD516BCC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF78D221-A052-4EFF-81BA-E6EFD516BCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF78D221-A052-4EFF-81BA-E6EFD516BCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF78D221-A052-4EFF-81BA-E6EFD516BCC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CECAED1F-10C0-4E66-86CC-F7354004D85D}
+	EndGlobalSection
+EndGlobal

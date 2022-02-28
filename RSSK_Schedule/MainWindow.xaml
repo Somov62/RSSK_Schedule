@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RSSK_Schedule"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Расписание" Height="450" Width="800" WindowState="Maximized">
+    <!--<Grid>
         <TextBlock Text="Group" Margin="60, 10"/>
         <TextBlock Text="Date" Margin="250, 10"/>
         <ComboBox x:Name="groupPicker" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30" HorizontalContentAlignment="Center" Width="100">
@@ -49,5 +49,22 @@
         <DatePicker Margin="200, 30" x:Name="datePicker" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Button Content="Показать" Click="ShowRasp_Click" Margin="450, 30, 0, 0"  Width="150" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBlock x:Name="output" Margin="30, 100, 30, 30" />
+    </Grid>-->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.RowSpan="2" Background="#AA3FB81C" BorderThickness="0, 0, 3, 0" BorderBrush="Gray">
+            
+        </Border>
+        <Border BorderThickness="3, 0, 0, 3" BorderBrush="Gray" Grid.Column="1" CornerRadius="10" Margin="-3, 0, -10, 0">
+            <TextBlock Background="White"  Padding="0, 15, 0, 0" FontSize="30" Text="{Binding ElementName=pageContainer, Path=Content.Title}" TextAlignment="Center" Margin="0, 0, 10, 5"/>
+        </Border>
+        <Frame Grid.Row="1" Grid.Column="1" x:Name="pageContainer"/>
     </Grid>
 </Window>

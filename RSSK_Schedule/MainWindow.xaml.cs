@@ -26,12 +26,15 @@ namespace RSSK_Schedule
         {
             InitializeComponent();
             parser = new ExcelParser($"{Environment.CurrentDirectory}\\Rasp21-22.xlsx");
+            pageContainer.NavigationService.Navigate(new ZamenyPage());
+            
+
         }
 
-        private void ShowRasp_Click(object sender, RoutedEventArgs e)
-        {
-            if (groupPicker.SelectedIndex == -1) return;
-            output.Text = parser.GetSchedule(groupPicker.Text, datePicker.SelectedDate.Value);
-        }
+        //private void ShowRasp_Click(object sender, RoutedEventArgs e)
+        //{
+        //    if (groupPicker.SelectedIndex == -1) return;
+        //    output.Text = parser.GetSchedule(groupPicker.Text, datePicker.SelectedDate.Value);
+        //}
     }
 }
